@@ -249,27 +249,25 @@ function mouseover(){
                 document.querySelector("#imahe").addEventListener('load', function() {   
                     var img = new Image();
                     let googleProxyURL = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=2592000&url=';
-                    
                     img.crossOrigin = 'Anonymous';
                     img.src = googleProxyURL + encodeURIComponent(imge);
                     if (img.complete) {
                         color = new ColorThief().getColor(img);
-                        i = 1;
+                        i = 5;
                         setInterval(function() {
                             if(i == 1){
                                 document.querySelector("#imahe").click()
-                                i++;
+                                i--;
                             }
                         }, 0);
-                        document.querySelector("#imahe").click()
                     } else {
                         img.addEventListener('load', function(el) {
                             color = new ColorThief().getColor(img);
-                            i = 1;
+                            i = 5;
                             setInterval(function() {
                                 if(i == 1){
                                     document.querySelector("#imahe").click()
-                                    i++;
+                                    i--;
                                 }
                             }, 0);
                         });
