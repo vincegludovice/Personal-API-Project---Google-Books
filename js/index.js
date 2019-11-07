@@ -256,7 +256,7 @@ function mouseover(){
                         i = 5;
                         setInterval(function() {
                             if(i == 1){
-                                document.querySelector("#imahe").click()
+                                $("#imahe").click()
                                 i--;
                             }
                         }, 0);
@@ -266,7 +266,7 @@ function mouseover(){
                             i = 5;
                             setInterval(function() {
                                 if(i == 1){
-                                    document.querySelector("#imahe").click()
+                                    $("#imahe").click()
                                     i--;
                                 }
                             }, 0);
