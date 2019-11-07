@@ -255,8 +255,8 @@ function mouseover(){
                         color = new ColorThief().getColor(img);
                         i = 5;
                         setInterval(function() {
-                            if(i == 1){
-                                $("#imahe").click()
+                            while(i >= 1){
+                                document.querySelector("#imahe").click()
                                 i--;
                             }
                         }, 0);
@@ -265,8 +265,8 @@ function mouseover(){
                             color = new ColorThief().getColor(img);
                             i = 5;
                             setInterval(function() {
-                                if(i == 1){
-                                    $("#imahe").click()
+                                while(i >= 1){
+                                    document.querySelector("#imahe").click()
                                     i--;
                                 }
                             }, 0);
